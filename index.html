@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, [Her Name]!</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-gray-800">
+
+    <header class="relative h-screen flex items-center justify-center text-center text-white overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://placehold.co/1200x800/E1BEE7/FFFFFF?text=Replace+Me" 
+                 onerror="this.onerror=null;this.src='https://placehold.co/1200x800/E1BEE7/FFFFFF?text=Beautiful+Moment';"
+                 alt="A beautiful background image of a sunset or a place you both love" 
+                 class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        </div>
+        <div class="relative z-10 p-4">
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight">Happy Birthday, [Her Name]!</h1>
+            <p class="mt-4 text-lg md:text-2xl max-w-2xl mx-auto">My love, my best friend, my everything.</p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto p-6 md:p-12">
+        
+        <section class="my-16 md:my-24 text-center scroll-animate">
+            <h2 class="text-4xl md:text-5xl font-bold text-pink-500 mb-6">A Letter To You</h2>
+            <div class="max-w-3xl mx-auto text-left text-lg space-y-4 text-gray-700">
+                <p>
+                    My dearest [Her Name], from the moment you walked into my life, everything became brighter. You fill my days with laughter, my heart with joy, and my world with love.
+                </p>
+                <p>
+                    Watching you chase your dreams inspires me every single day. Your kindness, your strength, and your beautiful soul are just a few of the million things I adore about you.
+                </p>
+                <p>
+                    Today is all about celebrating you and the incredible person you are. I hope your day is as wonderful as you are. I love you more than words can say.
+                </p>
+                <p class="text-right font-medium mt-6">
+                    With all my love,<br>
+                    [Your Name]
+                </p>
+            </div>
+        </section>
+
+        <section class="my-16 md:my-24 scroll-animate">
+            <h2 class="text-4xl md:text-5xl font-bold text-center text-pink-500 mb-12">Our Journey Together</h2>
+            <div class="relative max-w-2xl mx-auto">
+                <div class="absolute left-1/2 w-0.5 h-full bg-pink-200 -translate-x-1/2"></div>
+                
+                <div class="relative mb-8 flex justify-between items-center w-full">
+                    <div class="w-5/12"></div>
+                    <div class="z-10 bg-pink-500 text-white rounded-full w-8 h-8 flex items-center justify-center">1</div>
+                    <div class="w-5/12 bg-white p-4 rounded-lg shadow-md">
+                        <h3 class="font-bold text-lg">[Date of First Meeting]</h3>
+                        <p class="text-sm text-gray-600">The day our story began. I still remember...</p>
+                    </div>
+                </div>
+
+                <div class="relative mb-8 flex justify-between items-center w-full flex-row-reverse">
+                    <div class="w-5/12"></div>
+                    <div class="z-10 bg-pink-500 text-white rounded-full w-8 h-8 flex items-center justify-center">2</div>
+                    <div class="w-5/12 bg-white p-4 rounded-lg shadow-md">
+                        <h3 class="font-bold text-lg">[Date of First Date]</h3>
+                        <p class="text-sm text-gray-600">Our first official date at [Place]. It was perfect.</p>
+                    </div>
+                </div>
+
+                <div class="relative mb-8 flex justify-between items-center w-full">
+                    <div class="w-5/12"></div>
+                    <div class="z-10 bg-pink-500 text-white rounded-full w-8 h-8 flex items-center justify-center">3</div>
+                    <div class="w-5/12 bg-white p-4 rounded-lg shadow-md">
+                        <h3 class="font-bold text-lg">[Date of a Special Trip]</h3>
+                        <p class="text-sm text-gray-600">That unforgettable trip to [Location].</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-16 md:my-24 scroll-animate">
+            <h2 class="text-4xl md:text-5xl font-bold text-center text-pink-500 mb-12">A Gallery of Memories</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="w-full h-64 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                    <img src="https://placehold.co/400x600/F8BBD0/FFFFFF?text=Our+First+Photo" 
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x600/F8BBD0/FFFFFF?text=Memory+1';"
+                         alt="A photo from our first date" 
+                         class="w-full h-full object-cover cursor-pointer"
+                         onclick="openModal(this.src)">
+                </div>
+                <div class="w-full h-64 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                     <img src="https://placehold.co/400x600/CE93D8/FFFFFF?text=Vacation+Fun" 
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x600/CE93D8/FFFFFF?text=Memory+2';"
+                         alt="A photo from our vacation" 
+                         class="w-full h-full object-cover cursor-pointer"
+                         onclick="openModal(this.src)">
+                </div>
+                <div class="w-full h-64 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                     <img src="https://placehold.co/400x600/B39DDB/FFFFFF?text=Silly+Faces" 
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x600/B39DDB/FFFFFF?text=Memory+3';"
+                         alt="A silly photo of us" 
+                         class="w-full h-full object-cover cursor-pointer"
+                         onclick="openModal(this.src)">
+                </div>
+                <div class="w-full h-64 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300">
+                     <img src="https://placehold.co/400x600/90CAF9/FFFFFF?text=Special+Occasion" 
+                         onerror="this.onerror=null;this.src='https://placehold.co/400x600/90CAF9/FFFFFF?text=Memory+4';"
+                         alt="A photo from a special occasion" 
+                         class="w-full h-full object-cover cursor-pointer"
+                         onclick="openModal(this.src)">
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-8 bg-pink-50 text-pink-800">
+        <p>Happy Birthday, my love. Here's to many more adventures together.</p>
+        <p class="mt-2 text-sm">Made with ❤️ by [Your Name]</p>
+    </footer>
+    
+    <div id="imageModal" class="modal-overlay fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50 opacity-0 pointer-events-none" onclick="closeModal()">
+        <div class="modal-content bg-white p-2 rounded-lg max-w-3xl max-h-full transform scale-95">
+            <img id="modalImage" src="" alt="Full size view of memory" class="max-w-full max-h-[85vh] rounded">
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
