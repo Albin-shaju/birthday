@@ -1,0 +1,30 @@
+/* Using custom fonts with Tailwind */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FEFBF6; /* A soft, warm background color */
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Simple fade-in animation for sections */
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.scroll-animate.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Styling for the photo gallery modal */
+.modal-overlay {
+    transition: opacity 0.3s ease;
+}
+
+.modal-content {
+    transition: transform 0.3s ease;
+}
